@@ -14,10 +14,10 @@ L'output del **prezzo finale va messo** fuori **in forma umana** (con massimo du
 
 ## TO-DO list
 
-- [ ] Chiedere all'utente il numero di chilometri
-- [ ] Chiedere all'utente la sua età 
-- [ ] Struttura di controllo per capire le varie casistiche:
+- [x] Chiedere all'utente il numero di chilometri
+- [x] Chiedere all'utente la sua età 
+- [x] Struttura di controllo per capire le varie casistiche:
     - minorenne == sconto del 20%
     - maggiorenne == prezzo normale
     - over 65 == sconto del 40%
-- [ ] Stampare il prezzo finale fissandolo a massimo due cifre dopo la virgola
+- [x] Stampare il prezzo finale fissandolo a massimo due cifre dopo la virgola
