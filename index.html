@@ -14,11 +14,14 @@
     />
   </head>
   <body>
+
+    <!-- MAIN -->
     <main
       class="d-flex flex-column justify-content-center align-items-center gap-2 w-100 vh-100 bg-success"
     >
       <h1 class="fw-bold text-white">BOOLTRAIN</h1>
 
+      <!-- Form -->
       <form class="text-center">
         <input
           class="w-50"
@@ -31,6 +34,7 @@
           placeholder="kilometres"
         />
 
+        <!-- Form Check Container -->
         <div
           class="check-input-ctn d-flex gap-2 p-2 text-white fw-bold justify-content-center"
         >
@@ -65,7 +69,11 @@
             <label class="form-check-label" for="over-sixty-five"> +65 </label>
           </div>
         </div>
+        <!-- /Form Check Container -->
+
       </form>
+      <!-- /Form -->
+
 
       <button class="btn btn-primary fw-bold" onclick="priceCalculator()">
         Invia
@@ -73,6 +81,8 @@
 
       <h1 class="fw-bold text-white fs-2" id="finalPrice"></h1>
     </main>
+    <!-- /MAIN -->
+
 
     <script src="js/script.js"></script>
   </body>

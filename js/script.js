@@ -26,13 +26,13 @@ let discount;
 function priceCalculator() {
   const userKilometres = document.getElementById("kilometres").value;
 
-  finalPrice = parseInt(userKilometres) * oneKmPrice;
+  finalPrice = parseFloat(userKilometres) * oneKmPrice;
   discount = 0;
 
   //Select checked radio
   const selectedRadio = document.querySelector('input[name="age"]:checked');
 
-  //Discout conditions
+  //Discount conditions
   if (selectedRadio.value == "underage") {
     discount = finalPrice * 0.2;
     finalPrice -= discount;
@@ -46,7 +46,6 @@ function priceCalculator() {
     //debug
     console.log("Over 65: " + finalPrice);
   } else {
-    
     //debug
     console.log("Maggiorenne: " + finalPrice);
   }
