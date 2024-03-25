@@ -15,9 +15,63 @@
   </head>
   <body>
     <main
-      class="d-flex justify-content-center align-items-center w-100 vh-100 bg-primary"
+      class="d-flex flex-column justify-content-center align-items-center gap-2 w-100 vh-100 bg-success"
     >
-      <h1 class="fw-bold text-white" id="finalPrice">Calcolo del prezzo...</h1>
+      <h1 class="fw-bold text-white">BOOLTRAIN</h1>
+
+      <form class="text-center">
+        <input
+          class="w-50"
+          type="number"
+          aria-label="kilometres"
+          id="kilometres"
+          name="kilometres"
+          min="1"
+          step="1"
+          placeholder="kilometres"
+        />
+
+        <div
+          class="check-input-ctn d-flex gap-2 p-2 text-white fw-bold justify-content-center"
+        >
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="age"
+              value="underage"
+              id="underage"
+            />
+            <label class="form-check-label" for="underage"> - 18 </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="age"
+              value="adult"
+              id="adult"
+            />
+            <label class="form-check-label" for="adult"> +18 </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="age"
+              value="over-sixty-five"
+              id="over-sixty-five"
+            />
+            <label class="form-check-label" for="over-sixty-five"> +65 </label>
+          </div>
+        </div>
+      </form>
+
+      <button class="btn btn-primary fw-bold" onclick="priceCalculator()">
+        Invia
+      </button>
+
+      <h1 class="fw-bold text-white fs-2" id="finalPrice"></h1>
     </main>
 
     <script src="js/script.js"></script>
