@@ -12,7 +12,7 @@ if (age < 18) {
   discount = finalPrice * 0.2;
   finalPrice -= discount;
   console.log(finalPrice);
-} else if (age >= 18 && age < 65) {
+} else if (age > 65) {
   discount = finalPrice * 0.4;
   finalPrice -= discount;
   console.log(finalPrice);
