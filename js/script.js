@@ -1,6 +1,6 @@
 // GET DATA AND DECLARATION
 
-//OLD SOLUTION
+//! OLD SOLUTION
 // const kilometres = prompt("Inserisci il numero di km da percorrere");
 
 const oneKmPrice = 0.21;
@@ -9,7 +9,7 @@ let discount;
 
 // LOGICAL BLOCK
 
-//OLD SOLUTION
+//! OLD SOLUTION
 // if (age < 18) {
 //   discount = finalPrice * 0.2;
 //   finalPrice -= discount;
@@ -36,12 +36,18 @@ function priceCalculator() {
   if (selectedRadio.value == "underage") {
     discount = finalPrice * 0.2;
     finalPrice -= discount;
+
+    //debug
     console.log("Minorenne: " + finalPrice);
   } else if (selectedRadio.value == "over-sixty-five") {
     discount = finalPrice * 0.4;
     finalPrice -= discount;
+
+    //debug
     console.log("Over 65: " + finalPrice);
   } else {
+    
+    //debug
     console.log("Maggiorenne: " + finalPrice);
   }
 

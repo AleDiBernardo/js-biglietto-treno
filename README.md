@@ -12,6 +12,8 @@ Sulla base di queste informazioni dovrà **calcolare il prezzo totale del viaggi
 
 L'output del **prezzo finale va messo** fuori **in forma umana** (con massimo due decimali, per indicare centesimi sul prezzo). Questo richiederà un minimo di ricerca.
 
+--- 
+
 ## TO-DO list
 
 - [x] Chiedere all'utente il numero di chilometri
@@ -21,3 +23,11 @@ L'output del **prezzo finale va messo** fuori **in forma umana** (con massimo du
     - maggiorenne == prezzo normale
     - over 65 == sconto del 40%
 - [x] Stampare il prezzo finale fissandolo a massimo due cifre dopo la virgola
+
+--- 
+
+## Bonus (personale)
+
+- [x] Inserimento chilometri da input tag
+- [x] Scelta età con i radio button
+- [x] Al click del bottone invia viene effettuata una chiamata a funzione per il calcolo del prezzo
