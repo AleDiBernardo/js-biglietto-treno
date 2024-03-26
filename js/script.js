@@ -35,20 +35,17 @@ function priceCalculator() {
   //Discount conditions
   if (selectedRadio.value == "underage") {
     discount = finalPrice * 0.2;
-    finalPrice -= discount;
 
     //debug
     console.log("Minorenne: " + finalPrice);
   } else if (selectedRadio.value == "over-sixty-five") {
     discount = finalPrice * 0.4;
-    finalPrice -= discount;
 
     //debug
     console.log("Over 65: " + finalPrice);
-  } else {
-    //debug
-    console.log("Maggiorenne: " + finalPrice);
-  }
+  } 
+
+  finalPrice -= discount;
 
   // OUTPUT
   return (document.getElementById("finalPrice").innerHTML =
